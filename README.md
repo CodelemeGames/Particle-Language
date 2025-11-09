@@ -7,3 +7,8 @@ Languages such as Rust, C# and Python are known for their memory safe nature - e
 As previously stated, particle has shorter keyword names than the likes of C++, Javascript or Java - this was chosen to keep a familiar syntax to the languages it transpiles to; as we hope to make it quick to convert your particle code to C or C++ in your head as quick as possible (and to some extent to convert your particle code with the transpiler).
 
 Though I must say, all referenced languages as comparison to particle are all amazing, we highly recommend looking at what all of them can produce - when they have strengths, they are great using them. We aren't trying to make an opinion for you on the best language - that is extremely subjective.
+
+**What Can I Use Particle For?**  <br>
+Anything really, in code, if you can think it, and you know how to make it - go for it, if it works in C or C++; it works in particle.
+
+Or in license terms, the particle language transpiler is under the MIT license. We wanted the program to write particle code as accessible as possible; you can change any aspect of it - if you think its slow, messy or isn't to your liking - you can modify it to meet your standards. We will also be providing another document in the future for thosr who wants all the syntax and keywords for the language - to help you learn it; or for some, to help make a new transpiler - particle is really just a concept, anyone can make anything for and with particle.
