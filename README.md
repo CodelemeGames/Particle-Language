@@ -11,4 +11,6 @@ Though I must say, all referenced languages as comparison to particle are all am
 **What Can I Use Particle For?**  <br>
 Anything really, in code, if you can think it, and you know how to make it - go for it, if it works in C or C++; it works in particle.
 
-Or in license terms, the particle language transpiler is under the MIT license. We wanted the program to write particle code as accessible as possible; you can change any aspect of it - if you think its slow, messy or isn't to your liking - you can modify it to meet your standards. We will also be providing another document in the future for thosr who wants all the syntax and keywords for the language - to help you learn it; or for some, to help make a new transpiler - particle is really just a concept, anyone can make anything for and with particle.
+Or in license terms, the particle language transpiler is under the MIT license. Meaning you can distribute it, use it for any of your projects - free, open source or commercial.
+
+We wanted the program to write particle code as accessible as possible; you can change any aspect of it - if you think its slow, messy or isn't to your liking - you can modify it to meet your standards. We will also be providing another document in the future for thosr who wants all the syntax and keywords for the language - to help you learn it; or for some, to help make a new transpiler - particle is really just a concept, anyone can make anything for and with particle.
