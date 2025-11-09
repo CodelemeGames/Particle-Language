@@ -1,4 +1,4 @@
-# Particle-Language
+# The Particle Programming Language
 A memory-aware hyperset programming language which transpiled down to safe C and C++ code.
 
 Essentually, shorter keyword names and a new design philosopy - influenced by great languages such as Rust. Our goal is for a language designed over no runtime checks from our side - only at transpile time, to try and ensure fast performance while maintaining memory safety by default - that is particle's goal, and we will update the philosophy and transpiler to meet these goals - that is a guarantee.
