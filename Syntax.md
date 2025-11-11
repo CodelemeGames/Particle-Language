@@ -7,9 +7,12 @@ fl - float <br>
 st - string <br>
 ch - char <br>
 vd - void <br>
+cnst - const <br>
+mut - mutable <br>
 
 #inc<> - #include<> <br>
 #def - #define <br>
+name - namespace <br>
 str - struct <br>
 use - using <br>
 rt - return <br>
