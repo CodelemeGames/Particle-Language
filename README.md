@@ -18,3 +18,7 @@ Anything really, in code, if you can think it, and you know how to make it - go 
 Or in license terms, the particle language transpiler is under the MIT license. Meaning you can distribute it, use it for any of your projects - free, open source or commercial.
 
 We wanted the program for converting particle code as accessible as possible; you can change any aspect of it - if you think its slow, messy or isn't to your liking - you can modify it to meet your standards. We will also be providing another document in the future for those who want all the syntax and keywords for the language - to help you learn it; or for some, to help make a new transpiler - particle is really just a concept, anyone can make anything for and with particle.
+
+**What is a hyperset language?**
+
+A hyperset language is a high-level abstraction layer in the form of a programming language which can transpile down to multiple lower-level languages; typically for performance and stability. We coined the term to help provide a fast way of describing what particle is - like how C++ is a subset of C (or superset if you want to see it that way), or typescript being a superset of javascript. Of course you can use this term for any of your own projects - we don't own the term, and we don't want to.
