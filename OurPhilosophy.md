@@ -13,3 +13,10 @@ Over time, languages such as C++ have been given newer solutions to heap allocat
 In safe particle code environments (environments in which the transpiler has not been told to allow unsafe code), we have the transpiler look for any raw pointer allocations or dereferences, this results in a transpilation error. This ensures most of the most common memory issues are not able to occur in safe particle environments, other than buffer overflows which we will mention later in this document.
 
 We do encourage you to look into your stack memory usage percentage, as it is significantly smaller than the space that can be used for heap allocations. As it would count as a reasonable exception to this rule, as continuation of stack memory may impact performance - though if you are going to use heap memory, make sure you know exactly when and where that memory is allocated, used or freed.
+
+**Refrain from passing data or whole objects around the codebase, use references instead.**
+
+Passing pointers into functions as parameters can lead to nullptr dereferences, this is undefined behavour and will typically result in a crash. However, this is not the only issue, calling free on a pointer does not always mean that memory is immediately written as 0x0, in some operating systems the memory block is marked to be written to later - this can lead to Use-After-Free vulnerbilities, which can lead to Arbitrary Code Execution. Though if the memory was never allocated by your program in the first place, it will usually result in undefined behavour because of a null dereference and will then crash, as stated prior.
+
+We recommend references to data instead, it guarantees that no null issues arise; which leads to less crashes from undefined behavour and less security vulnerbilities as a result of a data lifetime misconception.
+
