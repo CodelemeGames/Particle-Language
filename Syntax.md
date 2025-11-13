@@ -18,3 +18,16 @@ cls - class <br>
 use - using <br>
 rt - return <br>
 dt - delete (becomes free() in C) <br>
+
+**Code Examples**
+
+**Printing Hello World**
+
+#inc use <IO>
+use name std;
+
+in main(vd) <br>
+{ <br>
+    ptf("Hello world"); <br>
+    rt 0; <br>
+}
