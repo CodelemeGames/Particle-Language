@@ -14,6 +14,7 @@ mut - mutable <br>
 #def - #define <br>
 name - namespace <br>
 str - struct <br>
+cls - class <br>
 use - using <br>
 rt - return <br>
 dt - delete (becomes free() in C) <br>
