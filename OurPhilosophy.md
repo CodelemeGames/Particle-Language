@@ -18,5 +18,10 @@ We do encourage you to look into your stack memory usage percentage, as it is si
 
 Passing pointers into functions as parameters can lead to nullptr dereferences, this is undefined behavour and will typically result in a crash. However, this is not the only issue, calling free on a pointer does not always mean that memory is immediately written as 0x0, in some operating systems the memory block is marked to be written to later - this can lead to Use-After-Free vulnerbilities, which can lead to Arbitrary Code Execution. Though if the memory was never allocated by your program in the first place, it will usually result in undefined behavour because of a null dereference and will then crash, as stated prior.
 
-We recommend references to data instead, it guarantees that no null issues arise; which leads to less crashes from undefined behavour and less security vulnerbilities as a result of a data lifetime misconception.
+We recommend references to data instead, it guarantees that no null issues arise; which leads to less crashes from undefined behavour and less security vulnerbilities as a result of a data lifetime misconception. <br>
 
+**Keep your names simple, to the point, and quick to understand to your future self.** <br>
+
+Every programmer at some point in their codebases have written variable names that only make sense to them at that current moment. This approach leads to names that will become nonsense in a week or so; you begin to think more like your peers the more you drift away from the original thought process, this happens to everyone, maybe not a day or two, but usually it begins to become this way around the one week mark. <br>
+
+We recommend short names, not so short that they will become nonsense themselves, but short enough to type quickly, and to think quickly, if you have a variables named 'health' then keep it as 'health'; though if you have something on the lines of 'MouseSensitivity', that can be easy to say to yourself in your mind; but not quick to write - the goal is to find some middle ground, we highly recommend asking yourself this question: 'Is this name as fast to write as it is to think?' It may not be the largest change but you will almost certainly see a development time decrease in the long run; and hopefully less time to ease into your code base after a long period of time.
