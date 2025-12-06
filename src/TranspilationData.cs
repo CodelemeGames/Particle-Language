@@ -20,6 +20,9 @@ public class TranspilationData
         { "conva", "consteval"},
         { "conit", "constinit"},
         { "cnst", "const" },
+        { "and", "&&" },
+        { "or", "||" },
+        { "not", "!=" }
     };
 
     public static List<string> invalidSyntax = new List<string>()
@@ -28,4 +31,5 @@ public class TranspilationData
         { "*"},
         { ">"}
     };
+
 };
